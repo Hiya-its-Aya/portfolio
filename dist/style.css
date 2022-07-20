@@ -97,3 +97,8 @@ header,
 	align-self: center;
 	width: 80%;
 }
+
+p{
+	word-spacing: .15rem;
+	letter-spacing: .1rem;
+}
