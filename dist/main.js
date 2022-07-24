@@ -1,1 +1,1 @@
-(()=>{var e=["Hi, my name is...<br> Aya Moosa"],t=0;typewriter=()=>{document.querySelector(".greeting").innerHTML=e[0].substring(0,t)+"<span>| </span>",t++!=e[0].length&&setTimeout(typewriter,75)},window.addEventListener("load",typewriter)})();
+(()=>{var e=["Hi, my name is <br> Aya Moosa :)"],r=0;typewriter=()=>{document.querySelector(".greeting").innerHTML=e[0].substring(0,r)+'<span class="blinker">| </span>',r++!=e[0].length&&setTimeout(typewriter,100)},window.addEventListener("load",typewriter)})();

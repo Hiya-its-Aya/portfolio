@@ -4,32 +4,74 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aya Moosa Portfolio</title>
+    <title>Aya Moosa</title>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div id="logo">AYA MOOSA</div>
+        <div id="logo"> <a href="#aya">AYA MOOSA </a></div>
         <ul id="head-list">
-            <li>ABOUT ME</li>
-            <li>PROJECTS</li>
-            <li>CONTACT ME</li>
+            <li><a href="#about-me"> ABOUT ME </a></li>
+            <li> <a href="#projects"> PROJECTS </a> </li>
+            <li> <a href="#contact-me"> CONTACT ME </a></li>
         </ul>
+        <div class="links"> 
+            <a href="https://github.com/Hiya-its-Aya"  target="_blank"> 
+                 <img id="github" src="./img/github.svg" alt="github logo">
+             </a> 
+             <a href="https://www.linkedin.com/in/aya-m-926a981b9/" target="_blank">
+                 <img id="linkedin" src="./img/linkedin.svg" alt="linkedin logo">
+             </a>
+             <a class="resume" href="./resume.pdf" target="_blank">
+                 <img id="resume" src="./img/resume.svg" alt="resume logo">
+             </a>
+         </div>
     </header>
     <section id="aya">
         <p class="greeting"></p>
-        <div class="caption"></div>
+        <p class="caption">Web Developer/ Software Engineer/ Math Nerd</p>
+        <div class="links"> 
+           <a href="https://github.com/Hiya-its-Aya"  target="_blank"> 
+                <img id="github" src="./img/github.svg" alt="github logo">
+            </a> 
+            <a href="https://www.linkedin.com/in/aya-m-926a981b9/" target="_blank">
+                <img id="linkedin" src="./img/linkedin.svg" alt="linkedin logo">
+            </a>
+            <a class="resume" href="./resume.pdf" target="_blank">
+                <img id="resume" src="./img/resume.svg" alt="resume logo">
+            </a>
+        </div>
+        <div class="scroll-prompt">
+            <p>Keep Scrolling!</p>
+        </div>
     </section>
     <section id="about-me">
+            <h1> About Me<span class="blinker">|</span></h1>
         <div id="content">
-            <h1>ABOUT ME</h1>
-            <p> Hi, I'm a budding developer based in California, with a current emphasis on front-end Web Development. I graduated with a BS in Mathematics in May 2021, and in the time between then and now, I have been discovering what career path was best for me, and eventually, all signs pointed to a carrer in software deveolpment. I enjoy problem-solving and dedication that I have retained from my degree, but wanted to apply my skills to something more tangible. I also want to take my love for creating accessible materials that I grew from my Disabilities Services job at Fresno State into my work. I am currently learning web development with The Odin Project, fullstack Javascript path, where I have already made more than a dozen small projects on my own. I think, despite being a novice, I will be a great addition to any team and learn fast.</p>
-         </div>
+            <ul>
+                <li>Graduated from CSU, Northridge with a <span> BS in Mathematics, Cum Laude</span> </li>
+                <li>Learning web development with <span><a class="odin" href="https://www.theodinproject.com" target="_blank"> The Odin Project</a></span>
+                </li>
+                <li>Tech Stack:
+                    <div class="stacks"></div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <section id="projects">
-
+        <h1>Projects<span class="blinker">|</span></h1>
+        <div id="content">
+            <div id="project" class="restaurant-page">
+                <h3> Restaurant Page</h3>
+                <p> Mockup Restaurant Page</p>
+                <h4> Skills Used:</h4>
+                <div class="skills">svg here</div>
+            </div>
+            <div id="project"></div>
+            <div id="project"></div>
+        </div>
     </section>
 
     <section id="contact-me">

@@ -44,12 +44,20 @@ table {
 	border-spacing: 0;
 }
 
+
 /* ------------------------------------------------------------------------------------------------- */
+*{
+	/* border: 1px dashed red !important; */
+	letter-spacing: .2rem;
+	
+}
 
-/* colors, yellow- #FBE8A6, ORANGE - #F4976C, NAVY BLUE - #303C6C, 
- MUTED LIGHT BLUE - #B4DFE5, LIGHTBLUE #D2FDFF */
+html {
+	scroll-behavior: smooth;
+  }
 
-span{
+
+.blinker{
     animation: blinker 1s linear infinite;
 }
 
@@ -67,20 +75,37 @@ body{
 	flex-direction: column;
 }
 
-
-
- .greeting{
-    font-family:'Courier New', Courier, monospace, sans-serif;
-	font-size: 5rem;
-	padding: 10%;
-	height: 15rem;
+section{
+	min-height:100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.greeting,
+.caption{
+    font-family:'Courier New', Courier, monospace, sans-serif;
+	padding-left: 20%;
+	padding-bottom: 1rem;
+}
+
+.greeting{
+	font-size: 5rem;
+}
+
 
 header{ 
 	background-color: black;
 	height: 2rem;
 	padding: 1rem;
+	position: sticky;
+	top: 0px;
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+	flex: 1;
+	z-index: 99999;
+	display: flex;
 }
+
 header,
 #head-list{
 	display: flex;
@@ -88,17 +113,94 @@ header,
 	align-items: center;
 }
 
-#logo,
-#head-list > li{
-	padding:3rem;
+#head-list>li:hover,
+header #logo:hover{
+	font-size: 1.2rem;
 }
 
+#logo,
+#head-list > li{
+	height: 3rem;
+	width: 9rem;
+	padding-top: 2rem;
+	
+}
+	
+
 #about-me{
-	align-self: center;
-	width: 80%;
+
 }
 
 p{
 	word-spacing: .15rem;
 	letter-spacing: .1rem;
 }
+
+#aya{
+	display: flex;
+	
+	flex-direction: column;
+}
+.links{
+	padding-left: 20%;
+	display: flex;
+	align-items: center;
+	height: 40px;
+}
+
+.links>a{
+	width: 50px;
+}
+
+.links>a>img:hover{
+	height:30px;
+	width:30px;
+}
+
+.scroll-prompt{
+	align-self: center;
+	position: relative;
+	padding-top: 15%;
+}
+
+h1{
+	font-family:'Courier New', Courier, monospace, sans-serif;
+	font-size: 2rem;
+	padding-bottom: 1rem;
+	padding-left: 10%;
+}
+
+#content>ul>li>span{
+	color: goldenrod ;
+}
+
+#content>ul>li{
+	padding: 1rem;
+}
+a{
+	text-decoration: none;
+	color:white;
+}
+.odin{
+	color:goldenrod;
+	text-decoration: underline;
+}
+
+
+#content{
+	padding: 2rem; 
+	background-color: rgba(0, 0, 0, 0.704); 
+	box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3); 
+	border-radius: 7px;
+	width: 80%;
+	justify-self: center;
+	align-self: center;
+	
+}
+
+#projects> #content{
+	display: grid;
+}
+
+
+
