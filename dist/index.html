@@ -7,6 +7,7 @@
     <title>Aya Moosa</title>
     <script src="./main.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <header>
@@ -17,13 +18,13 @@
             <li> <a href="#contact-me"> CONTACT ME </a></li>
         </ul>
         <div class="links"> 
-            <a href="https://github.com/Hiya-its-Aya"  target="_blank"> 
+            <a href="https://github.com/Hiya-its-Aya" title="GitHub" target="_blank"> 
                  <img id="github" src="./img/github.svg" alt="github logo">
              </a> 
-             <a href="https://www.linkedin.com/in/aya-m-926a981b9/" target="_blank">
+             <a href="https://www.linkedin.com/in/aya-m-926a981b9/" title="Linked-In" target="_blank">
                  <img id="linkedin" src="./img/linkedin.svg" alt="linkedin logo">
              </a>
-             <a class="resume" href="./resume.pdf" target="_blank">
+             <a class="resume" href="./resume.pdf" title="Resume" target="_blank">
                  <img id="resume" src="./img/resume.svg" alt="resume logo">
              </a>
          </div>
@@ -32,18 +33,18 @@
         <p class="greeting"></p>
         <p class="caption">Web Developer/ Software Engineer/ Math Nerd</p>
         <div class="links"> 
-           <a href="https://github.com/Hiya-its-Aya"  target="_blank"> 
+           <a href="https://github.com/Hiya-its-Aya" title="GitHub" target="_blank"> 
                 <img id="github" src="./img/github.svg" alt="github logo">
             </a> 
-            <a href="https://www.linkedin.com/in/aya-m-926a981b9/" target="_blank">
+            <a href="https://www.linkedin.com/in/aya-m-926a981b9/" title="Linked-In" target="_blank">
                 <img id="linkedin" src="./img/linkedin.svg" alt="linkedin logo">
             </a>
-            <a class="resume" href="./resume.pdf" target="_blank">
+            <a class="resume" href="./resume.pdf" title="Resume" target="_blank">
                 <img id="resume" src="./img/resume.svg" alt="resume logo">
             </a>
         </div>
         <div class="scroll-prompt">
-            <p>Keep Scrolling!</p>
+            <p class="scroll">Keep Scrolling!</p>
         </div>
     </section>
     <section id="about-me">
@@ -63,19 +64,93 @@
     <section id="projects">
         <h1>Projects<span class="blinker">|</span></h1>
         <div id="content">
-            <div id="project" class="restaurant-page">
-                <h3> Restaurant Page</h3>
-                <p> Mockup Restaurant Page</p>
-                <h4> Skills Used:</h4>
-                <div class="skills">svg here</div>
+            <h2>Hover over my projects for more info!</h2>
+            <div id="project-container">
+                <div id="project" class="restaurant-page">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="card-img" src="img/restaurant-page-photo.png" alt="restaurant page">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Restaurant Page</h2>
+                            <p>Mockup Resturant page using HTML and CSS. <br>  Skills Learned: OOP practices, DOM manipulation.</p>
+                            <a href="https://hiya-its-aya.github.io/restaurant-page/" target="_blank">
+                                <button class="live"> Live Website </button>
+                            </a>
+                            <a href="https://github.com/Hiya-its-Aya/restaurant-page" target="_blank">
+                                <button class="code">Source Code</button>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="project" class="admin-page">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="card-img" src="img/admin-dash-photo.png" alt="admin page">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Admin Dashboard</h2>
+                            <p>Mockup admin page using HTML, CSS, and JS <br>  Skills Learned: Intermediate CSS skills, CSS grid.</p>
+                            <a href="https://hiya-its-aya.github.io/admin-dash/" target="_blank">    
+                                <button class="live"> Live Website </button>
+                            </a>
+                            <a href="https://github.com/Hiya-its-Aya/admin-dash" target="_blank">
+                                <button class="code">Source Code</button>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="project">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img class="card-img" s
+                            rc="" alt="another project">
+                        </div>
+                        <div class="flip-card-back">
+                            <h2>Admin Dashboard</h2>
+                            <p>Mockup admin page using HTML, CSS, and JS <br>  Skills Learned: Intermediate CSS skills, CSS grid.</p>
+                            <a href="https://hiya-its-aya.github.io/admin-dash/" target="_blank">    
+                                <button class="live"> Live Website </button>
+                            </a>
+                            <a href="https://github.com/Hiya-its-Aya/admin-dash" target="_blank">
+                                <button class="code">Source Code</button>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="project"></div>
-            <div id="project"></div>
         </div>
     </section>
 
     <section id="contact-me">
-
+        <h1>Contact Me<span class="blinker">|</span></h1>
+        <div id="content">
+            <p>Shoot me an email!</p>
+            
+            <form
+            action="https://formspree.io/f/xeqnyvnn"
+            method="POST">
+            <label>
+                Name:
+                <input type="text" name="name">
+            </label>
+            <label>
+              Email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Message:
+              <textarea name="message"></textarea>
+            </label>
+            <button type="submit">Send</button>
+          </form>
+        </div>  
     </section>
 </body>
 </html>
