@@ -99,11 +99,17 @@ header,
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row !important;
 }
 
 #head-list>li:hover,
 header #logo:hover{
 	font-size: 1.2rem;
+}
+
+#headlist{
+	width: 50%;
 	
 }
 
@@ -112,10 +118,12 @@ header #logo:hover{
 	display: flex;
 	height: 3rem;
 	width: 9rem;
-	/* padding-top: 2rem; */
 	align-items: center;
 	justify-self: center;
 	padding-left: 1.5rem;
+}
+#head-links{
+	padding: 0rem !important;
 }
 	
 p{
@@ -131,7 +139,6 @@ p{
 .caption{
     font-family:'Courier New', Courier, monospace, sans-serif;
 	padding-left: 20%;
-	
 	padding-bottom: 1rem;
 }
 
@@ -146,10 +153,11 @@ p{
 	display: flex;
 	align-items: center;
 	height: 40px;
+	width: 50px;
 }
 
 .links>a{
-	width: 50px;
+	padding-left: 1.5rem;
 }
 
 .links>a>img:hover{
@@ -211,8 +219,8 @@ h2{
 
 .flip-card {
   background-color: transparent;
-  width: 500px;
-  height: 300px;
+  width: 400px;
+  height: 250px;
   border: 1px solid #f1f1f1;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   border:0px;
@@ -260,9 +268,16 @@ h2{
 	padding-bottom: 2rem;
 }
 
+.flip-card-buttons{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-around;
+}
+
 button{
 	background-color:  goldenrod;
-	align-self: center;
+	/* align-self: center; */
 	width: 10rem;
 	height: 3rem;
 	border-radius: 10px;
@@ -275,8 +290,8 @@ button:hover{
 }
 
 .card-img{
-	width: 500px;
-	height: 300px;
+	width: 400px;
+	height: 250px;
 }
 
 form{
