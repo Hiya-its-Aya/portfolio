@@ -2,21 +2,21 @@
   <nav class= "py-4 px-6 rounded">
     <div class="flex flex-row justify-between items-center">
       <div class="basis-1/4">
-        <h1 class="text-text-dark text-2xl hover:font-bold">Logo</h1>
+        <h1 class="text-text-dark text-3xl hover:font-bold">Logo</h1>
       </div>
       <div class="basis-1/2">
         <ul class="flex justify-around">
           <li>
-            <a href="#" class="text-text-dark  ">Home</a>
+            <a href="#" class="text-text-dark text-lg ">Home</a>
           </li>
           <li>
-            <a href="#" class="text-text-dark ">About</a>
+            <a href="#" class="text-text-dark text-lg">About</a>
           </li>
           <li>
-            <a href="#" class="text-text-dark  ">Projects</a>
+            <a href="#" class="text-text-dark text-lg ">Projects</a>
           </li>
           <li>
-            <a href="#" class="text-text-dark ">Contact</a>
+            <a href="#" class="text-text-dark text-lg ">Contact</a>
           </li>
         </ul>
       </div>
@@ -40,7 +40,7 @@
   }
 
   a:hover {
-    text-shadow: 0 0 .9px #CAD2C5, 0 0 .65px #CAD2C5 ;
+    text-shadow: 0 0 1px #CAD2C5, 0 0 1px #CAD2C5 ;
     /* use the line below if you want a more intense effect */
     /* text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333; */
 } 
