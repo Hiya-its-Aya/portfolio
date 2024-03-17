@@ -1,6 +1,6 @@
 
 <template>
-  <div class="bg-bg-dark h-screen">
+  <div >
     <!-- <h1 class='text-lg text-text-dark'> Hello </h1> -->
     <Navbar />
     <Hero />

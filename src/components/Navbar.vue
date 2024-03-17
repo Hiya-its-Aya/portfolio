@@ -2,21 +2,21 @@
   <nav class= "py-4 px-6 rounded">
     <div class="flex flex-row justify-between items-center">
       <div class="basis-1/4">
-        <h1 class="text-text-dark text-3xl hover:font-bold">Logo</h1>
+        <h1 class="text-text-dark text-3xl ">Logo</h1>
       </div>
       <div class="basis-1/2">
         <ul class="flex justify-around">
           <li>
-            <a href="#" class="text-text-dark text-lg ">Home</a>
+            <a href="#" class="text-text-dark text-xl">Home</a>
           </li>
           <li>
-            <a href="#" class="text-text-dark text-lg">About</a>
+            <a href="#" class="text-text-dark text-xl">About</a>
           </li>
           <li>
-            <a href="#" class="text-text-dark text-lg ">Projects</a>
+            <a href="#" class="text-text-dark text-xl">Projects</a>
           </li>
           <li>
-            <a href="#" class="text-text-dark text-lg ">Contact</a>
+            <a href="#" class="text-text-dark text-xl">Contact</a>
           </li>
         </ul>
       </div>
@@ -34,13 +34,13 @@
 </script>
 
 <style scoped>
-  a {
-    letter-spacing: .1em;
-    transition: text-shadow .3s;
+  a, h1{
+    letter-spacing: .2em;
+    transition: text-shadow .1s;
   }
 
-  a:hover {
-    text-shadow: 0 0 1px #CAD2C5, 0 0 1px #CAD2C5 ;
+  a:hover, h1:hover{
+    text-shadow: 0 0 1.5px #CAD2C5, 0 0 1.5px #CAD2C5 ;
     /* use the line below if you want a more intense effect */
     /* text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333; */
 } 
